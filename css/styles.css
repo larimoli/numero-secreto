@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@300;500&family=Roboto:wght@300&display=swap');
+
+:root {
+    --bg-color: #4158D0 linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); 
+    --font-titulo: #EEA689;
+    --font-frase: #574896;
+    --font-mensagem: #ffffff;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background: var(--bg-color) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.jogo__titulo {
+    font-family: 'Chewy', cursive;
+    text-transform: uppercase;
+    color: var(--font-titulo);
+    font-size: 50px;
+}
+
+.jogo__frase {
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    color: var(--font-frase);
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0.5em 0 2em 0;
+}
+
+.mensagem {
+    font-family: 'League Spartan';
+    color: var(--font-mensagem);
+    font-weight: 300;
+    font-size: 21px;
+}
+
+.mensagem__resultado {
+    margin-bottom: 0.5em;
+}
+
+.box {
+    border: 2px solid var(--font-frase);
+    border-radius: 0.2em;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-size: 4em;
+    margin: 0.05em;
+    padding: 0.1em;
+}
+
+
+.dica__frase {
+    font-family: 'League Spartan', sans-serif;
+    color: var(--font-mensagem);
+    font-weight: 300;
+    font-size: 21px;
+    margin-top: 0.2em;
+}
+
+.seta {
+    align-items: baseline;
+}
+
