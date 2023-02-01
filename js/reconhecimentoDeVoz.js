@@ -9,13 +9,16 @@ recognition.start()
 recognition.addEventListener('result', onSpeak)
 
 function onSpeak(e) {
-    chute = e.results[0] [0].transcript
+    chute = e.results[0][0].transcript
     exibeChute(chute)
+    verificaSeOChutePossuiUmValorValido(chute)
 }
 
 function exibeChute(chute) {
     elementoChute.innerHTML = `
-    <div class="mensagem__resultado">Você disse:</div>
-    <span class="box">${chute}</span>
+        <div class="mensagem__resultado">Você disse:</div>
+        <span class="box">${chute}</span>
     `
 }
+
+recognition.addEventListener('end', () => recognition.start())

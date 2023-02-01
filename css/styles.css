@@ -45,30 +45,57 @@ body {
     font-size: 21px;
 }
 
-.mensagem__resultado {
-    margin-bottom: 0.5em;
-}
-
 .box {
     border: 2px solid var(--font-frase);
     border-radius: 0.2em;
     display: inline-block;
     font-family: 'Roboto';
     font-size: 4em;
-    margin: 0.05em;
+    margin: 0.09em;
     padding: 0.1em;
 }
 
 
-.dica__frase {
+.dica__frase, .mensagem__numero-certo {
     font-family: 'League Spartan', sans-serif;
     color: var(--font-mensagem);
     font-weight: 300;
     font-size: 21px;
-    margin-top: 0.2em;
+    margin-top: 0.3em;
+}
+
+.mensagem__numero-certo {
+    font-size: 23px;
+}
+
+.mensagem__acerto {
+    font-family: 'League Spartan', sans-serif;
+    color: var(--font-mensagem);
+    text-transform: uppercase;
+    font-weight: 500px;
+    font-size: 45px;
+    margin-top: 0.5em;
 }
 
 .seta {
     align-items: baseline;
+}
+
+.btn__jogar {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    color: var(--font-titulo);
+    margin: 1.5em;
+    padding: 1em;
+    background-color: var(--font-frase);
+    border: transparent;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.btn__jogar:hover {
+    color: var(--font-frase);
+    background-color: var(--font-titulo);
 }
 
